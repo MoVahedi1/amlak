@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Search, MapPin, Home, TrendingUp, Users, Star, ArrowRight, Play } from 'lucide-react'
+import { useRouter } from 'next/navigation' //
+import { Search, MapPin, Home, TrendingUp, Users, Star, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -12,13 +13,24 @@ import PropertyCard from '@/components/PropertyCard'
 import { formatPrice } from '@/utils'
 import propertiesData from '@/data/properties.json'
 
+// تعریف اینترفیس برای استیت جستجو
+interface SearchState {
+  type: string;
+  category: string;
+  neighborhood: string;
+  minPrice?: string | number; // اضافه کردن فیلد قیمت
+}
+
 export default function HomePage() {
+  const router = useRouter()
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [searchData, setSearchData] = useState({
+  
+  // مقداردهی اولیه اصلاح شده
+  const [searchData, setSearchData] = useState<SearchState>({
     type: 'buy',
     category: 'all',
     neighborhood: '',
-    priceRange: 'all'
+    minPrice: '' 
   })
 
   const featuredProperties = propertiesData.filter(property => property.featured).slice(0, 3)
@@ -45,11 +57,12 @@ export default function HomePage() {
     }
   ]
 
+  // اصلاح آرایه محله‌ها با اضافه کردن نام انگلیسی برای لینک‌دهی
   const neighborhoods = [
-    { name: "سعاد آباد", avgPrice: 750000000, properties: 45 },
-    { name: "نیاوران", avgPrice: 1200000000, properties: 32 },
-    { name: "تهران‌پارس", avgPrice: 450000000, properties: 78 },
-    { name: "لاوان", avgPrice: 2500000000, properties: 28 }
+    { name: "سعاد آباد", englishName: "Saadat Abad", avgPrice: 750000000, properties: 45 },
+    { name: "نیاوران", englishName: "Niavaran", avgPrice: 1200000000, properties: 32 },
+    { name: "تهران‌پارس", englishName: "Tehranpars", avgPrice: 450000000, properties: 78 },
+    { name: "لواسان", englishName: "Lavasan", avgPrice: 2500000000, properties: 28 }
   ]
 
   const stats = [
@@ -87,13 +100,19 @@ export default function HomePage() {
     return () => clearInterval(timer)
   }, [heroSlides.length])
 
+  // تابع جستجوی اصلاح شده با استفاده از router.push
   const handleSearch = () => {
     const params = new URLSearchParams()
     if (searchData.type !== 'all') params.append('type', searchData.type)
     if (searchData.category !== 'all') params.append('category', searchData.category)
-    if (searchData.neighborhood) params.append('neighborhood', searchData.neighborhood)
+    if (searchData.neighborhood && searchData.neighborhood !== 'all') params.append('neighborhood', searchData.neighborhood)
     
-    window.location.href = `/properties${params.toString() ? '?' + params.toString() : ''}`
+    // اصلاح باگ مقدار 0: بررسی می‌کنیم که مقدار خالی یا undefined نباشد (0 مجاز است)
+    if (searchData.minPrice !== '' && searchData.minPrice !== undefined) {
+       params.append('minPrice', searchData.minPrice.toString())
+    }
+    
+    router.push(`/properties?${params.toString()}`)
   }
 
   const goToSlide = (index: number) => {
@@ -138,7 +157,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Slide Indicators */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2">
           {heroSlides.map((_, index) => (
             <button
@@ -200,7 +218,8 @@ export default function HomePage() {
                   <Input
                     placeholder="Min Price"
                     type="number"
-                    value={searchData.minPrice || ''}
+                    // استفاده از ?? برای هندل کردن صحیح مقادیر
+                    value={searchData.minPrice ?? ''}
                     onChange={(e) => setSearchData({...searchData, minPrice: e.target.value})}
                   />
                 </div>
@@ -278,8 +297,9 @@ export default function HomePage() {
                   <div className="text-gray-600 mb-4">
                     {neighborhood.properties} Properties
                   </div>
+                  {/* لینک اصلاح شده: استفاده از نام انگلیسی در کوئری استرینگ */}
                   <Button variant="outline" size="sm" className="w-full" asChild>
-                    <Link href={`/neighborhoods/${neighborhood.name.toLowerCase().replace(' ', '-')}`}>
+                    <Link href={`/properties?neighborhood=${neighborhood.englishName}`}>
                       Explore Area
                     </Link>
                   </Button>
