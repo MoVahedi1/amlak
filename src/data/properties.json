@@ -1,0 +1,305 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Apartment in Saadat Abad",
+    "price": 850000000,
+    "type": "buy",
+    "category": "apartment",
+    "neighborhood": "Saadat Abad",
+    "size": 120,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "yearBuilt": 2018,
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Beautiful modern apartment in the prestigious Saadat Abad neighborhood. This property features stunning city views, high-end finishes, and proximity to shopping centers and restaurants.",
+    "amenities": ["Parking", "Elevator", "Storage", "Balcony", "Central Heating", "Air Conditioning", "Security"],
+    "location": {
+      "lat": 35.8044,
+      "lng": 51.4012
+    },
+    "featured": true,
+    "agent": {
+      "id": 1,
+      "name": "Ali Rezaei",
+      "phone": "+98-21-88765432",
+      "email": "ali@tehranproperties.com"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Luxury Villa in Lavasan",
+    "price": 2500000000,
+    "type": "buy",
+    "category": "villa",
+    "neighborhood": "Lavasan",
+    "size": 350,
+    "rooms": 4,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "yearBuilt": 2020,
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Exclusive luxury villa in the upscale Lavasan area with panoramic mountain views, private pool, and landscaped garden. Perfect for those seeking privacy and luxury.",
+    "amenities": ["Private Pool", "Garden", "Parking", "Security System", "Fireplace", "Wine Cellar", "Gym", "Sauna"],
+    "location": {
+      "lat": 35.8563,
+      "lng": 51.5989
+    },
+    "featured": true,
+    "agent": {
+      "id": 2,
+      "name": "Sara Mohammadi",
+      "phone": "+98-21-88765433",
+      "email": "sara@tehranproperties.com"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Cozy Apartment in Tehranpars",
+    "price": 2500000,
+    "type": "rent",
+    "category": "apartment",
+    "neighborhood": "Tehranpars",
+    "size": 85,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "yearBuilt": 2015,
+    "images": [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Comfortable and affordable apartment in Tehranpars, close to metro station and amenities. Ideal for small families or young professionals.",
+    "amenities": ["Parking", "Elevator", "Storage", "Balcony", "Central Heating"],
+    "location": {
+      "lat": 35.7165,
+      "lng": 51.4524
+    },
+    "featured": false,
+    "agent": {
+      "id": 3,
+      "name": "Mehdi Karimi",
+      "phone": "+98-21-88765434",
+      "email": "mehdi@tehranproperties.com"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Penthouse in Niavaran",
+    "price": 3200000000,
+    "type": "buy",
+    "category": "penthouse",
+    "neighborhood": "Niavaran",
+    "size": 280,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "yearBuilt": 2021,
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Stunning penthouse with breathtaking views of Tehran and Alborz mountains. Features include rooftop terrace, high-end appliances, and premium finishes throughout.",
+    "amenities": ["Rooftop Terrace", "Jacuzzi", "Smart Home", "Wine Cooler", "Private Elevator", "Security", "Parking", "Gym"],
+    "location": {
+      "lat": 35.8221,
+      "lng": 51.4297
+    },
+    "featured": true,
+    "agent": {
+      "id": 1,
+      "name": "Ali Rezaei",
+      "phone": "+98-21-88765432",
+      "email": "ali@tehranproperties.com"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Commercial Space in Vanak",
+    "price": 1800000000,
+    "type": "buy",
+    "category": "commercial",
+    "neighborhood": "Vanak",
+    "size": 150,
+    "rooms": 1,
+    "bedrooms": 0,
+    "bathrooms": 2,
+    "yearBuilt": 2019,
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Prime commercial space in busy Vanak area, perfect for office, retail, or medical practice. High foot traffic and excellent visibility.",
+    "amenities": ["Parking", "Storage", "Security", "Air Conditioning", "Reception Area", "Meeting Rooms"],
+    "location": {
+      "lat": 35.8076,
+      "lng": 51.4163
+    },
+    "featured": false,
+    "agent": {
+      "id": 4,
+      "name": "Narges Ahmadi",
+      "phone": "+98-21-88765435",
+      "email": "narges@tehranproperties.com"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Family House in Shahrak-e Gharb",
+    "price": 1500000000,
+    "type": "buy",
+    "category": "house",
+    "neighborhood": "Shahrak-e Gharb",
+    "size": 200,
+    "rooms": 3,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "yearBuilt": 2016,
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Spacious family house in the desirable Shahrak-e Gharb neighborhood. Close to international schools, shopping centers, and parks.",
+    "amenities": ["Garden", "Parking", "Storage", "Security System", "Fireplace", "Central Heating", "Air Conditioning"],
+    "location": {
+      "lat": 35.7543,
+      "lng": 51.3387
+    },
+    "featured": false,
+    "agent": {
+      "id": 2,
+      "name": "Sara Mohammadi",
+      "phone": "+98-21-88765433",
+      "email": "sara@tehranproperties.com"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Studio Apartment in Elahieh",
+    "price": 1800000,
+    "type": "rent",
+    "category": "apartment",
+    "neighborhood": "Elahieh",
+    "size": 45,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "yearBuilt": 2020,
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Modern studio apartment in trendy Elahieh, perfect for students or young professionals. Walking distance to cafes and boutiques.",
+    "amenities": ["Parking", "Elevator", "Storage", "Balcony", "Air Conditioning"],
+    "location": {
+      "lat": 35.8156,
+      "lng": 51.4382
+    },
+    "featured": false,
+    "agent": {
+      "id": 3,
+      "name": "Mehdi Karimi",
+      "phone": "+98-21-88765434",
+      "email": "mehdi@tehranproperties.com"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Land in Darrous",
+    "price": 800000000,
+    "type": "buy",
+    "category": "land",
+    "neighborhood": "Darrous",
+    "size": 500,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "yearBuilt": null,
+    "images": [
+      "https://images.unsplash.com/photo-1628624078352-27d4d75231a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Prime land opportunity in Darrous area, perfect for development. Flat terrain with easy access to main roads.",
+    "amenities": ["Water Connection", "Electricity", "Gas Connection"],
+    "location": {
+      "lat": 35.8032,
+      "lng": 51.4276
+    },
+    "featured": false,
+    "agent": {
+      "id": 4,
+      "name": "Narges Ahmadi",
+      "phone": "+98-21-88765435",
+      "email": "narges@tehranproperties.com"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Duplex in Jordan",
+    "price": 3500000,
+    "type": "rent",
+    "category": "duplex",
+    "neighborhood": "Jordan",
+    "size": 180,
+    "rooms": 3,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "yearBuilt": 2017,
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Elegant duplex in prestigious Jordan area, close to embassies and high-end shopping. Features modern design and premium finishes.",
+    "amenities": ["Parking", "Elevator", "Storage", "Balcony", "Central Heating", "Air Conditioning", "Security", "Gym"],
+    "location": {
+      "lat": 35.8018,
+      "lng": 51.4241
+    },
+    "featured": true,
+    "agent": {
+      "id": 1,
+      "name": "Ali Rezaei",
+      "phone": "+98-21-88765432",
+      "email": "ali@tehranproperties.com"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Apartment in Zaferanieh",
+    "price": 1200000000,
+    "type": "buy",
+    "category": "apartment",
+    "neighborhood": "Zaferanieh",
+    "size": 140,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "yearBuilt": 2019,
+    "images": [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "description": "Bright and airy apartment in diplomatic area of Zaferanieh. Close to international schools and shopping centers.",
+    "amenities": ["Parking", "Elevator", "Storage", "Balcony", "Central Heating", "Air Conditioning", "Security"],
+    "location": {
+      "lat": 35.8267,
+      "lng": 51.4234
+    },
+    "featured": false,
+    "agent": {
+      "id": 2,
+      "name": "Sara Mohammadi",
+      "phone": "+98-21-88765433",
+      "email": "sara@tehranproperties.com"
+    }
+  }
+]

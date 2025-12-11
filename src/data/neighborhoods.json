@@ -1,0 +1,82 @@
+[
+  {
+    "id": "saadat-abad",
+    "name": "Saadat Abad",
+    "description": "Upscale residential neighborhood in northern Tehran known for its modern apartments, shopping centers, and proximity to business districts.",
+    "averagePrice": 750000000,
+    "averageRent": 3000000,
+    "propertiesCount": 45,
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Shopping Centers", "Restaurants", "Schools", "Parks", "Metro Access"]
+  },
+  {
+    "id": "niavaran",
+    "name": "Niavaran",
+    "description": "Prestigious neighborhood in northern Tehran, home to the Niavaran Palace and surrounded by beautiful mountains and forests.",
+    "averagePrice": 1200000000,
+    "averageRent": 4500000,
+    "propertiesCount": 32,
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Palace", "Mountains", "Forest", "Luxury Villas", "International Schools"]
+  },
+  {
+    "id": "tehranpars",
+    "name": "Tehranpars",
+    "description": "Well-planned residential area in eastern Tehran with excellent metro connectivity and affordable housing options.",
+    "averagePrice": 450000000,
+    "averageRent": 1800000,
+    "propertiesCount": 78,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Metro Station", "Shopping Centers", "Parks", "Schools", "Hospitals"]
+  },
+  {
+    "id": "lavasan",
+    "name": "Lavasan",
+    "description": "Luxury mountain resort town northeast of Tehran, popular for its pleasant weather, villas, and recreational facilities.",
+    "averagePrice": 2500000000,
+    "averageRent": 8000000,
+    "propertiesCount": 28,
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Mountain Views", "Luxury Villas", "Ski Resort", "Golf Course", "Restaurants"]
+  },
+  {
+    "id": "vanak",
+    "name": "Vanak",
+    "description": "Central Tehran neighborhood with excellent commercial and residential properties, close to Vanak Square and shopping centers.",
+    "averagePrice": 680000000,
+    "averageRent": 2800000,
+    "propertiesCount": 56,
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Vanak Square", "Shopping Malls", "Metro Access", "Hospitals", "Universities"]
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "description": "Diplomatic quarter of Tehran with many embassies, international restaurants, and high-end residential buildings.",
+    "averagePrice": 1800000000,
+    "averageRent": 6000000,
+    "propertiesCount": 24,
+    "image": "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Embassies", "International Restaurants", "Luxury Hotels", "Art Galleries", "Boutiques"]
+  },
+  {
+    "id": "zafaranieh",
+    "name": "Zaferanieh",
+    "description": "Affluent neighborhood in northern Tehran, home to many diplomats, expatriates, and wealthy Iranians.",
+    "averagePrice": 1500000000,
+    "averageRent": 5000000,
+    "propertiesCount": 31,
+    "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["International Schools", "Embassies", "Parks", "Shopping Centers", "Restaurants"]
+  },
+  {
+    "id": "elahieh",
+    "name": "Elahieh",
+    "description": "Trendy neighborhood in northern Tehran known for its cafes, boutiques, and vibrant nightlife.",
+    "averagePrice": 950000000,
+    "averageRent": 3500000,
+    "propertiesCount": 38,
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "features": ["Cafes", "Boutiques", "Art Galleries", "Nightlife", "Restaurants"]
+  }
+]
