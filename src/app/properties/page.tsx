@@ -7,19 +7,34 @@ import SearchBar from '@/components/SearchBar'
 import { Button } from '@/components/ui/button'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Card, CardContent } from '@/components/ui/card'
-import { Grid, List, SlidersHorizontal, ChevronDown } from 'lucide-react'
+import { Grid, List } from 'lucide-react'
 import propertiesData from '@/data/properties.json'
+
+// تعریف اینترفیس برای فیلترها
+interface FiltersState {
+  type: string;
+  category: string;
+  neighborhood: string;
+  search: string;
+  minPrice: number;
+  maxPrice: number;
+  minSize: number;
+  maxSize: number;
+  bedrooms: number;
+  bathrooms: number;
+  featured: boolean;
+}
 
 export default function PropertiesPage() {
   const searchParams = useSearchParams()
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [sortBy, setSortBy] = useState('newest')
   const [currentPage, setCurrentPage] = useState(1)
-  const [showFilters, setShowFilters] = useState(false)
+  // const [showFilters, setShowFilters] = useState(false) // متغیر استفاده نشده حذف شد
 
   const propertiesPerPage = 12
 
-  const initialFilters = {
+  const initialFilters: FiltersState = {
     type: searchParams.get('type') || 'all',
     category: searchParams.get('category') || 'all',
     neighborhood: searchParams.get('neighborhood') || '',
@@ -33,7 +48,7 @@ export default function PropertiesPage() {
     featured: searchParams.get('featured') === 'true'
   }
 
-  const [filters, setFilters] = useState(initialFilters)
+  const [filters, setFilters] = useState<FiltersState>(initialFilters)
 
   const filteredAndSortedProperties = useMemo(() => {
     let filtered = propertiesData.filter(property => {
@@ -103,7 +118,8 @@ export default function PropertiesPage() {
     setCurrentPage(1)
   }, [filters])
 
-  const handleSearch = (newFilters: any) => {
+  // تایپ دقیق برای ورودی تابع
+  const handleSearch = (newFilters: FiltersState) => {
     setFilters(newFilters)
   }
 
