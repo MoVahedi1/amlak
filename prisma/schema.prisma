@@ -1,9 +1,6 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -19,6 +16,7 @@ model User {
   name      String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  posts     Post[]
 }
 
 model Post {
@@ -27,6 +25,25 @@ model Post {
   content   String?
   published Boolean  @default(false)
   authorId  String
+  author    User     @relation(fields: [authorId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+// مدل جدید برای املاک
+model Property {
+  id           String   @id @default(cuid())
+  title        String
+  description  String
+  price        Float
+  neighborhood String
+  type         String   // e.g., "buy" or "rent"
+  category     String   // e.g., "apartment", "villa"
+  bedrooms     Int
+  bathrooms    Int
+  size         Int      // Size in square meters
+  featured     Boolean  @default(false)
+  image        String?  // URL to the main image
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
